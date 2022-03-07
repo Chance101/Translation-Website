@@ -9,7 +9,7 @@ let tran = "";
 const fs = require("fs");
 var randomstring = require("randomstring");
 const projectId = "green-post-324807";
-const keyFilename = "C:\\Users\\dell\\OneDrive\\Desktop\\Desktop Sort\\Work\\University\\Year 2\\Sem 2\\FIT2095\\Prerna_Shahi_31872638_lab12\\TranslateApp\\green-post-324807-879dd34e7a59.json";
+const keyFilename = "C:\\Users\\dell\\OneDrive\\Documents\\GitHub\\Translation-Website\\green-post-324807-879dd34e7a59.json";
 // Imports the Google Cloud client library
 const textToSpeech = require("@google-cloud/text-to-speech");
 // Creates a client
