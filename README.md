@@ -1,6 +1,7 @@
 # TranslateApp
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.2.7.
+Used HTML, CSS, JavaScript and Google's Text-To-Speech API
 
 ## Development server
 
