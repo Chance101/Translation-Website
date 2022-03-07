@@ -1,0 +1,36 @@
+<h3>Synthesize and Translate Chat Application </h3>
+
+<div class="mb-3">
+  <label for="message"> Message to Translate: </label> <br>
+  <input type="text" id="message" placeholder="Enter message" [(ngModel)]="message">
+</div>
+
+<!-- //languages-->
+<div class="form-group">
+  <label for="language">Select Language:</label>
+  <select class="form-control" id="language" [(ngModel)]="language">
+    <option *ngFor="let item of languageObj.languages ">{{item.code}}</option>
+  </select>
+</div>
+<!-- //languages-->
+
+<br>
+
+<div style="background-color:grey;" *ngFor="let item of messages">
+  Message: {{item.msg}}
+
+  <br />
+  Translation: {{item.translated}}
+
+  <br />
+  FileName: {{item.fileOutputName}}
+
+  <br/>
+  <audio controls>
+    <source src="{{item.fileOutputName}}" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
+</div>
+
+<br>
+<button (click)="sendMessage()">Send Message</button>
