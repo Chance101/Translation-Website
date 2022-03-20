@@ -7,7 +7,6 @@ let port = 8080;
 let languageObj = require("./languageCode.js");
 let tran = "";
 const fs = require("fs");
-app.use(express.static('css'));
 var randomstring = require("randomstring");
 const projectId = "green-post-324807";
 const keyFilename = "C:\\Users\\dell\\OneDrive\\Documents\\GitHub\\Translation-Website\\green-post-324807-879dd34e7a59.json";
